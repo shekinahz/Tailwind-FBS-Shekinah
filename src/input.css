@@ -1,0 +1,250 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.body{
+    @apply font-montserrat
+}
+.container{
+    @apply max-w-[90rem] p-6 w-full mx-auto
+}
+
+@layer components {
+
+    /* BURGERMENU */
+    .burgir__menu{
+        @apply lg:hidden
+    }
+    .burgir__menu span{
+        @apply w-[1.5rem] h-[.2rem] bg-dark block rounded-full transition-all
+    }
+    .burgir__menu span:nth-child(2){
+        @apply my-1
+    }
+    .header__wrapper{
+        @apply flex items-center justify-between
+    }
+    .burgir__menu.open span:first-child{
+        @apply transform translate-y-[10px] rotate-[225deg] transition-all
+    }
+    .burgir__menu.open span:nth-child(2){
+        @apply opacity-0 transition-all;
+    }
+    .burgir__menu.open span:last-child{
+        @apply transform translate-y-[-5px] rotate-[-225deg] transition-all
+    }
+
+    .header__wrapper{
+        @apply md:px-12
+    }
+    .header__action {
+        @apply flex flex-col bg-white absolute top-[6.2rem] right-0 w-0 h-[90vh] px-0 pt-0 overflow-hidden transition-all 
+        shadow-md lg:static lg:h-fit lg:w-fit items-center lg:shadow-none md:bg-transparent;
+    }
+    .header__action.open {
+        @apply w-[100%] h-screen px-10 pt-10 transition-all ;
+    } 
+
+    .header__action .header__nav {
+        @apply pb-5 flex flex-col gap-1 border-b-gray-400 text-sm
+    }
+
+    .header__action .header__logo {
+        @apply flex flex-row justify-center md:hidden mt-6
+    }
+
+    .header__action .header__nav li:hover a {
+        /* @apply text-redz; */
+    }
+
+    .header__action .header__nav li a {
+        @apply font-normal text-sm text-black px-4 py-4
+    }
+
+    .header__action .header__nav ul {
+        @apply flex flex-col gap-5 pt-36 md:flex md:flex-row md:gap-3 md:pt-2 
+    }
+
+      /*BANNER*/
+    .banner{
+    @apply p-8 bg-[#f5f5f5] 
+      }
+   .banner__info{
+    @apply lg:grid lg:grid-cols-2
+   }
+   .banner__content{
+    @apply lg:mt-32 lg:mx-32
+   }
+   .banner__content h1 span{
+    @apply font-bold text-3xl
+   }
+   .banner__content h1 {
+    @apply font-normal text-3xl mb-10
+   }
+   .banner__content p {
+    @apply mb-10
+   }
+
+   /* WHOWHAT */
+   .whowhat{
+    @apply mt-24 mb-24
+   }
+   .whowhat__wrapper h2{
+    @apply text-center text-3xl font-bold mb-5
+   }
+   .whowhat__wrapper h2 span{
+    @apply text-center text-3xl font-normal mb-5
+   }
+   .whowhat__wrapper p{
+    @apply text-center lg:mx-[15.5rem] text-lg
+   }
+
+   /* services */
+   .services{
+    @apply bg-offerbg bg-cover bg-center bg-no-repeat 
+   }
+   .services__wrapper{
+    @apply lg:mt-10 lg:px-[10rem] p-8 mb-[-2rem];
+   }
+   .services__wrapper h2{
+    @apply text-center text-white font-bold text-3xl
+   }
+   .services__content{
+    @apply lg:grid lg:grid-cols-[_2fr,_2fr,_2fr,_2fr] mt-10 text-white grid grid-cols-1
+   }
+   .services__info img{
+    @apply max-w-[30px] max-h-[30px] 
+   }
+   .services__info h3{
+    @apply text-xl text-center
+   }
+
+   /* TESTIONIALS */
+   .testimonials__wrapper{
+    @apply  mx-auto px-[15rem]
+   }
+   .testimonials__content{
+    @apply grid grid-cols-2
+   }
+
+    /* EVENTS*/
+    .events__cards{
+        @apply grid grid-cols-1 gap-6 lg:grid lg:grid-cols-3 
+    }
+    .events__title{
+        @apply  py-8 text-center
+    }
+    .events__title h3{
+        @apply text-center pb-2 text-3xl font-bold 
+    }
+    .events__title span{
+        @apply text-center pb-2 text-3xl font-normal 
+    }
+    .events__card{
+        @apply border-2 shadow-lg box-border h-auto w-[355px] p-4 overflow-clip
+    }
+    .events__cards .events__card img{
+        @apply mb-6 shadow-lg max-w-md mx-[-1rem] mt-[-1rem]  leading-8 lg:hover:scale-[1.1] lg:ease-in-out transition-all
+    }
+    .events__cards .events__card h3{
+        @apply text-center font-bold text-[1.5rem] p-6;
+    }
+    .events__cards .events__card p{
+        @apply text-justify p-4;
+    }
+    .events__cards .events__card .card__infos{
+        @apply mx-4 mb-6 text-center;
+    }
+    .card__btn{
+        @apply text-center
+    }
+ 
+    /* FOOTER */
+    .footer {
+        @apply lg:p-8 p-3 bg-fbscolor mb-[-2rem];
+    }
+    .footer .footer__wrapper {
+        @apply flex flex-col items-center gap-5 md:flex md:flex-row md:place-content-around;
+    }
+
+     /*ABOUTBANNER*/
+     .aboutbanner{
+        @apply p-8 bg-[#f5f5f5] 
+          }
+       .aboutbanner__info{
+        @apply lg:grid lg:grid-cols-2
+       }
+       .aboutbanner__content{
+        @apply lg:mt-32 lg:mx-32
+       }
+       .aboutbanner__content h1 span{
+        @apply font-bold text-3xl
+       }
+       .aboutbanner__content h1 {
+        @apply font-normal text-3xl mb-10
+       }
+       .aboutbanner__content p {
+        @apply mb-10
+       }
+
+       /* EVENTS*/
+    .mission__cards{
+        @apply grid grid-cols-1 gap-6 lg:grid lg:grid-cols-[_2fr,_2fr,_2fr] lg:mt-10 lg:px-[10rem] p-8 mb-[-2rem]
+    }
+    .mission__title{
+        @apply  py-8 text-center
+    }
+    .mission__title h3{
+        @apply text-center pb-2 text-3xl font-bold 
+    }
+    .mission__title span{
+        @apply text-center pb-2 text-3xl font-normal 
+    }
+     .mission__cards .mission__card img{
+        @apply max-w-[350px] max-h-[233px] 
+    }
+    .mission__cards .mission__card h4{
+        @apply text-center font-bold text-[1.5rem] p-6;
+    }
+    .mission__cards .mission__card p{
+        @apply text-justify p-4;
+    }
+    .mission__cards .mission__card .card__infos{
+        @apply mx-4 mb-6 text-center;
+    }
+
+
+    /* CTA*/
+    .cta{
+        @apply bg-[radial-gradient(circle_farthest-side_at_center_bottom,#e81a86,#6a103f_125%)] lg:p-16 p-3
+    }
+    .cta__wrapper h2{
+        @apply text-center text-3xl text-white
+    }
+/* PARTNERS */
+.partners__image {
+    @apply grid grid-cols-3
+}
+}
+
+@layer utilities{
+    .btn{
+        @apply inline-block py-[.5rem] px-[1rem] rounded-full border-transparent border-[1px] 
+        text-sm font-medium;
+    }
+
+    .btn.bg--fbs{
+     @apply bg-fbscolor text-light text-center rounded-3xl hover:bg-light hover:text-black hover:border-dark px-[25px] py-[13px]
+        }
+
+    .btn.bg--meow{
+            @apply bg-transparent text-black text-center rounded-3xl border-black hover:bg-[#e7b3ce] hover:text-black hover:border-[#6a103f]
+            px-10  mt-8
+        }
+    .btn.bg--cta{
+            @apply bg-transparent text-white font-bold text-center rounded-3xl border-white hover:bg-white hover:text-black hover:border-white
+            px-10  mt-8
+        }
+    }
+   
+

@@ -1,40 +1,38 @@
-const burgir = document.querySelector(".burgir__menu");
-const headerA = document.querySelector(".header__nav");
-burgir.addEventListener("click", () => {
-    burgir.classList.toggle("active");
-    headerA.classList.toggle("active");
+document.addEventListener("DOMContentLoaded", function () {
+  const dropdownToggle = document.querySelector(".dropdown-parent");
+  const dropdownMenu = document.querySelector(".nav-links-dropdown");
+
+  dropdownToggle.addEventListener("mouseenter", function () {
+    dropdownToggle.classList.add("active");
+    dropdownMenu.classList.add("active");
+  });
+
+  dropdownToggle.addEventListener("mouseleave", function () {
+    dropdownToggle.classList.remove("active");
+    dropdownMenu.classList.remove("active");
+  });
+
+  dropdownMenu.addEventListener("mouseenter", function () {
+    dropdownToggle.classList.add("active");
+  });
+
+  dropdownMenu.addEventListener("mouseleave", function () {
+    dropdownToggle.classList.remove("active");
+    dropdownMenu.classList.remove("active");
+  });
 });
 
-// const faqinfo = document.querySelectorAll(".faq__infos");
-// faqinfo.forEach((infos) => {
-//     infos.addEventListener("click", ()=>{
-//         infos.classList.toggle("active");
-//     });
-// });
+const burgerbtn = document.querySelector(".burger__menu");
+const headerA = document.querySelector("nav");
+burgerbtn.addEventListener("click", () => {
+  burgerbtn.classList.toggle("open");
+  headerA.classList.toggle("open");
+});
 
-
-// const faqsLinks = document.querySelectorAll(".faq__links");
-// const faqsContent = document.querySelectorAll(".faq__content");
-// faqsLinks.forEach((faq) => {
-//   faq.addEventListener("click", () => {
-//     removeActiveFaqs();
-//     faq.classList.add("active");
-//     const activeContent = document.querySelector(`#${faq.id}-content`);
-//     removeActiveContent();
-//     activeContent.classList.add("active");
-//   });
-// });
-
-// function removeActiveContent() {
-//   faqsLinks.forEach((content) => {
-//     content.classList.remove("active");
-//   });
-// };
-
-// function removeActiveContent() {
-//   faqsContent.forEach((content) => {
-//     content.classList.remove("active");
-//   });
-// };
-
- 
+const links = document.querySelectorAll(".links__item h4");
+links.forEach((link) => {
+  link.addEventListener("click", () => {
+    link.querySelector("i").classList.toggle("open");
+    link.nextElementSibling.classList.toggle("open");
+  });
+});

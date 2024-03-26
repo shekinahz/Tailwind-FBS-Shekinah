@@ -6,50 +6,85 @@
     <title>FBS</title>
     <link rel="shortcut icon" href="./img/logo-fbs.png">
     <link rel="stylesheet" href="/src/output.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- BANNER HEADER -->
-    <div class="container bg-white">
-        <header class="header">
-            <div class="header__wrapper">
-                <a href="#"><img src="/dist/img/logo-fbs.png" alt=""/></a>
-                <div class="header__action">
-                    <div class="header__nav">
-                    <ul>
-                            <li><a href="">HOME</a></li>
-                            <li><a href="">ABOUT</a></li>
-                            <li><a href="">SERVICES</a></li>
-                            <li><a href="">CAREER</a></li>
-                            <li><a href="">ACTIVITIES</a></li>
-                            <li><a href="">CONTACT</a></li>
-                            <li><a href="">PAYMENT</a></li>
-                            
+    <header>
+        <div class="container">
+          <div class="header__wrapper">
+            <div class="logo">
+              <a href="#"><img src="./img/logo-fbs.png" alt="" /></a>
+            </div>
+            <nav>
+  
+                <ul class="nav-links">
+                  <li>
+                    <a href="home.html">Home</a>
+                  </li>
+                  <li>
+                    <a href="about.html">About</a>
+                  </li>
+                  <li class="dropdown-parent">
+                    <a href="#dropdown">Services</a>
+                    <ul class="nav-links-dropdown lg:p-2">
+                      <li class="p-2 lg:px-1">
+                        <a href="#" class="text-light text-sm">Web Solutions</a>
+                      </li>
+                      <li class="p-2 lg:px-1">
+                        <a href="#" class="text-light text-sm"
+                          >Virtual Assistant Solutions</a
+                        >
+                      </li>
+                      <li class="p-2 lg:px-1">
+                        <a href="#" class="text-light text-sm"
+                          >Accounting Solutions</a
+                        >
+                      </li>
+                      <li class="p-2 lg:px-1">
+                        <a href="#" class="text-light text-sm"
+                          >Learning Center Solutions</a
+                        >
+                      </li>
                     </ul>
-                    </div>
-
-                    <div class="header__logo">
-                        <a href="#"><img src="/dist/img/logo.png" alt=""/></a>
-                    </div>
-                </div>
-            
-            <div class="burgir__menu">
-                <span></span>
-                <span></span>
-                <span></span>
+                  </li>
+                  <li>
+                    <a href="#">Career</a>
+                  </li>
+                  <li>
+                    <a href="#">Activities</a>
+                  </li>
+                  <li>
+                    <a href="#">Contact</a>
+                  </li>
+                  <li>
+                    <a href="#">Payment</a>
+                  </li>
+                </ul>
+  
+            </nav>
+            <div
+              class="burger__menu relative w-[40px] h-[40px] lg:hidden cursor-pointer duration-500"
+            >
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
             </div>
-            </div>
-            
-        </header>
-    </div>
+          </div>
+        </div>
+      </header>
 
         <div class="banner">
             <div class="container">
                 <div class="banner__info">
-        <div class="banner__content">
+        <div class="banner__content animate__animated animate__fadeInUp">
             <h1>Excellence in <span>Managed Services</span> and <span>Web Solutions</span></h1>
             <p>Along with our website design & development solutions (Including website hosting, graphic design, and basic SEO services), FBS meets the needs of clients through recruiting and managing professionals who serve in a wide array of areas like bookkeeping and accounting, virtual assistant and data entry personnel. If you want excellent customer service and a dedicated professional working at a competitive price, we can meet your needs.</p>
             
@@ -58,14 +93,13 @@
             </div>
         </div> 
 
-        <div class="banner__image">
+        <div class="banner__image animate__animated animate__fadeInUp animate__delay-1s">
             <img src="/dist/img/fbs-banner-bg.png" alt="">
         </div>
           </div>
           </div>
         </div>
-        
-
+<!-- WHOWHAT -->
         <div class="whowhat">
             <div class="container">
                 <div class="whowhat__wrapper">
@@ -78,64 +112,85 @@
                 </div>
             </div>
         </div>
+<!-- SERVICES -->
+      
+<section class="services bg-offerbg lg:py-6 py-0.5">
+    <div class="container">
+      <h1 class="text-light pt-28 pb-20 text-3xl text-center">
+        What <strong>We Offer?</strong>
+      </h1>
+      <div class="services__wrapper lg:grid lg:grid-cols-[_2fr,_2fr,_2fr,_2fr] lg:px-[10rem]">
 
-        <div class="services">
-            <div class="container">
-                <div class="services__wrapper">
-                    <h2>What We Offer?</h2>
-                    <div class="services__content">
-                    <div class="services__info">
-
-                   <img src="./img/code-solid.png" alt="">
-       
-                        <h3>Web Solutions</h3>
-                        <ul>
-                            <li>Website Design and Development</li>
-                            <li>WordPress Development</li>
-                            <li>Website Redesign</li>
-                            <li>Web Hosting & Domain</li>
-                            <li>Website Maintenance</li>
-                            <li>Online Payment Integration</li>
-                            <li>Web-Based Applications</li>
-                        </ul>
-                    </div>
-                    <div class="services__info">
-                        <img src="./img/headset-solid.png" alt="">
-                        <h3>Virtual Assistant Solutions</h3>
-                        <ul>
-                            <li>Lead Generation</li>
-                            <li>Database Management</li>
-                            <li>Social Media Management</li>
-                            <li>Digital Marketing</li>
-                            <li>Multimedia</li>
-                            <li>Transcription</li>
-                            <li>Email Campaign/Newsletters</li>
-                            <li>Website Management</li>
-                        </ul>
-                    </div>
-
-                    <div class="services__info">
-                        <img src="./img/calculator-solid.png" alt="">
-                        <h3>Accounting Solutions</h3>
-                        <ul>
-                            <li>Dedicated Accounting Staff</li>
-                            <li>Compliance</li>
-                            <li>Bookkeeping</li>
-                        </ul>
-                    </div>
-
-                    <div class="services__info">
-                        <img src="./img/chalkboard-user-solid.png" alt="">
-                        <h3>Learning Center Solutions</h3>
-                        <ul>
-                            <li>Senior Highschool Immersion Program</li>
-                            <li>College On-the-Job Traning</li>
-                        </ul>
-                    </div>
-                </div>
-                </div>
-            </div>
+        <div class="services__card mt-0 text-light">
+          <div class="mb-10 card-title flex flex-col items-center">
+            <img
+              src="./img/code-solid.png"
+              alt=""
+              class="mb-5 w-[50px] h-full"
+            />
+            <h2 class="text-xl">Web Solutions</h2>
+          </div>
+          <ul class="list-circle flex flex-col gap-4">
+           <li>◦ Website Design and Development</li>
+           <li>◦ WordPress Development</li>
+           <li>◦ Website Redesign</li>
+           <li>◦ Web Hosting & Domain</li>
+           <li>◦ Website Maintenance</li>
+           <li>◦ Online Payment Integration</li>
+           <li>◦ Web-Based Applications</li>
+          </ul>
         </div>
+        <div class="services__card text-light">
+          <div class="mb-10 card-title flex flex-col items-center">
+            <img
+              src="./img/headset-solid.png"alt=""
+              class="mb-5 w-[50px] h-full"
+            />
+            <h2 class="text-xl">Virtual Assistant Solutions</h2>
+          </div>
+          <ul class="list-circle flex flex-col gap-3">
+            <li>◦ Lead Generation</li>
+            <li>◦ Database Management</li>
+            <li>◦ Social Media Management</li>
+            <li>◦ Digital Marketing</li>
+            <li>◦ Multimedia</li>
+            <li>◦ Transcription</li>
+            <li>◦ Email Campaign/Newsletters</li>
+            <li>◦ Website Management</li>
+          </ul>
+        </div>
+
+        <div class="services__card text-light">
+          <div class="mb-10 card-title flex flex-col items-center">
+            <img
+              src="./img/calculator-solid.png"alt=""
+              class="mb-5 w-[50px] h-full"
+            />
+            <h2 class="text-xl">Accounting Solutions</h2>
+          </div>
+          <ul class="list-circle flex flex-col gap-3">
+            <li>◦ Dedicated Accounting Staff</li>
+            <li>◦ Compliance</li>
+            <li>◦ Bookkeeping</li>
+          </ul>
+        </div>
+
+        <div class="services__card text-light">
+          <div class="mb-10 card-title flex flex-col items-center">
+            <img
+              src="./img/chalkboard-user-solid.png"alt=""
+              class="mb-5 w-[50px] h-full"
+            />
+            <h2 class="text-xl">Learning Center Solutions</h2>
+          </div>
+          <ul class="list-circle flex flex-col gap-3">
+            <li>◦ Senior Highschool Immersion Program</li>
+            <li>◦ College On-the-Job Traning</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
 
         <!-- TESTIMONIALS
         <div class="testimonials">
@@ -233,7 +288,7 @@
             </div>
             </div>
         </div> -->
-        <section class="events">
+        <!-- <section class="events">
             <div class="container">
                 <div class="events__wrapper">
                     <div class="events__title">
@@ -280,7 +335,267 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
+        <section class="testimonial bg-[#f5f5f5] py-24">
+            <div class="container">
+              <h1 class="text-center text-3xl mb-10">
+                Hear what our <strong>clients say.</strong>
+              </h1>
+              <div class="testimonial__wrapper">
+                <div class="testimonial__sliders">
+                  <div class="slider__content">
+                    <div class="slider-grid">
+                    <div class="slider__image">
+                      <img
+                        src="./img/jamesDavidson-e1685672789528.jpg"alt=""/>
+                      <h2 class="text-center font-bold text-gray-800">
+                        James Davidson
+                      </h2>
+                      <p class="text-center font-light mb-5">
+                        Managing Director &amp; President
+                      </p>
+                      <h4
+                        class="text-center text-sm font-semibold text-gray-800 mb-16">
+                        Avant Advisory Group
+                      </h4>
+                    </div>
+                    
+                    <div class="slider__info">
+                      <h2
+                        class="text-center max-w-[80%] font-bold text-[14px] leading-8 heading-1 mx-auto pb-16 lg:pt-16">
+                        “Frontline Business Solutions” is beyond an exceptional firm.
+                        Professional courtesy, responsiveness, competence, and client
+                        service are only a few of the many high level qualities that
+                        Frontline’s team exhibit. Frontline exemplifies the golden
+                        rule by treating its clients as it would like to be treated.
+                        Every Frontline team member with whom Avant Advisory Group has
+                        dealt has been a true blessing. Finally, based on Avant
+                        Advisory Group’s several years of working with Frontline
+                        personnel, and especially Mike DeJesus, I can say that they
+                        work heartily for their clients as if they are working for the
+                        Lord. (Colossians 3:23-24) Thank you for what you do,
+                        Frontline!”
+                      </h2>
+                    </div>
+                  </div>
+                  </div>
+                  <div class="slider__content">
+                    <div class="slider-grid">
+                      <div class="slider__image">
+                        <img src="./img/ralph-raymund-pinon.png"/>
+                        <h2 class="text-center font-bold text-gray-800">
+                          Robert Han
+                        </h2>
+                        <p class="text-center font-light mb-5">COO/Partner</p>
+                        <h4
+                          class="text-center text-sm font-semibold text-gray-800 mb-16">
+                          Twomiles
+                        </h4>
+                      </div>
+                    <div class="slider__info">
+                      <h2
+                        class="text-center max-w-[80%] font-bold text-[14px] leading-8 heading-1 mx-auto pb-16">
+                        “FBS is a true partner to our firm. They have help form our
+                        vision and trajectory. We are immensely grateful our
+                        partnership. Our expectation is to FBS to grow with us. They
+                        are an important part of our success. And beyond the business
+                        perspective, they are fantastic people. We are blessed to work
+                        with them.”
+                      </h2>
+                    </div>
+                  </div>
+                  </div>
+                  <div class="slider__content">
+                    <div class="slider-grid">
+                      <div class="slider__image">
+                        <img src="./img/james_sunderland.png" alt="" />
+                        <h2 class="text-center font-bold text-gray-800">
+                          James Sunderland
+                        </h2>
+                        <p class="text-center font-light mb-5">
+                          Over The Top Marketing
+                        </p>
+                        <h4
+                          class="text-center text-sm font-semibold text-gray-800 mb-16">
+                          Twomiles
+                        </h4>
+                      </div>
+                    
+                    <div class="slider__info">
+                      <h2
+                        class="text-center max-w-[80%] font-bold text-[14px] leading-8 heading-1 mx-auto pb-16">
+                        “The team at Frontline is incredible. They genuinely care
+                        about our needs and share in our vision of success. We are
+                        proud to call them a business partner and appreciate all the
+                        hard work they do for us.”
+                      </h2>
+                    </div>
+                  </div>
+                  </div>
+                  <div class="slider__content">
+                    <div class="slider__content">
+                      <div class="slider__image">
+                        <img src="./img/ralph-raymund-pinon.png alt="/>
+                        <h2 class="text-center font-bold text-gray-800">
+                          Tim Salmonson
+                        </h2>
+                        <p class="text-center font-light mb-5">Social Economist</p>
+                        <h4
+                          class="text-center text-sm font-semibold text-gray-800 mb-16"
+                        >
+                          Social Economic Enterprises
+                        </h4>
+                      </div>
+                    <div class="slider__info">
+                      <h2
+                        class="text-center max-w-[80%] font-bold text-[14px] leading-8 heading-1 mx-auto pb-16">
+                        There is no better business model.
+                      </h2>
+                    </div>
+                  </div>
+                  </div>
+                  <div class="slider__content">
+                    <div class="slider-grid">
+                      <div class="slider__image">
+                        <img src="./img/jeffrey-seitz.png" alt="" />
+                        <h2 class="text-center font-bold text-gray-800">
+                          Jeffrey Seitz
+                        </h2>
+                        <p class="text-center font-light mb-5">
+                          Chief Executive Officer
+                        </p>
+                        <h4
+                          class="text-center text-sm font-semibold text-gray-800 mb-16">
+                          Phix Genomics
+                        </h4>
+                      
+                    </div>
+                    <div class="slider__info">
+                      <h2
+                        class="text-center max-w-[80%] font-bold text-[14px] leading-8 heading-1 mx-auto pb-16">
+                        "I have worked with a number of different website developers,
+                        but none have been as responsive or as quick to turn the work
+                        around."
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+                  <div class="slider__content">
+                    <div class="slider-grid">
+                      <div class="slider__image">
+                        <img src="./img/testi-doodz.png" alt="" />
+                        <h2 class="text-center font-bold text-gray-800">
+                          Rhoda Lynn Pessina Dayo
+                        </h2>
+                        <p class="text-center font-light mb-5">School Directress</p>
+                        <h4
+                          class="text-center text-sm font-semibold text-gray-800 mb-16">
+                          Frontline Christian Academy
+                        </h4>
+                      </div>
+                    
+                    <div class="slider__info">
+                      <h2
+                        class="text-center max-w-[80%] font-bold text-[14px] leading-8 heading-1 mx-auto pb-16">
+                        "We enjoyed working together and meeting with the Frontline
+                        Business Solutions Staff when they built the website of
+                        Frontline Christian Academy."
+                      </h2>
+                    </div>
+                  </div>
+                  </div>
+                  <div class="slider__content">
+                    <div class="slider-grid">
+                      <div class="slider__image">
+                        <img src="./img/ralph-raymund-pinon.png" alt=""/>
+                        <h2 class="text-center font-bold text-gray-800">
+                          Raymund Pinon
+                        </h2>
+                        <p class="text-center font-light mb-5">
+                          VP Sales and Marketing
+                        </p>
+                        <h4
+                          class="text-center text-sm font-semibold text-gray-800 mb-16">
+                          Phix Genomics Philippines
+                        </h4>
+                      
+                    </div>
+                    <div class="slider__info">
+                      <h2
+                        class="text-center max-w-[80%] font-bold text-[14px] leading-8 heading-1 mx-auto pb-16">
+                        "Yes, we are pleased to have chosen Frontline Business
+                        Solutions as our partner in developing the PHIX Genomics
+                        website because you are able to deliver on your promises."
+                      </h2>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+      
+        <section id="#event" class="events py-24 lg:px-[20rem] px-5">
+            <div class="container">
+              <h1 class="text-center text-3xl mb-10">
+                <strong>Events</strong> and <strong>Activities</strong>
+              </h1>
+              <div class="events__wrapper animate__animated animate__fadeInUp">
+                <div class="event-cards mb-[2rem] lg:grid lg:grid-cols-3 lg:gap-10 grid-cols-1">
+                <div class="event-card mb-10">
+                  <div class="img__transition">
+                    <div class="img-clip">
+                      <img
+                        src="./img/5th-year-thumb_3-350x192.jpg"alt=""/>
+                    </div>
+                  </div>
+                  <div
+                    class="event-description p-[30px] mb-3 flex flex-col items-center">
+                    <h2 class="text-xl font-bold mb-3">FBS 5th Anniversary</h2>
+                    <p class="text-center mb-7">
+                      Our 5th-year celebration at Frontline Business Solutions is a
+                      special time to look back on…
+                    </p>
+                    <a class="btn bg--fbs">Read More</a>
+                </div>
+                </div>
+                <div class="event-card mb-10">
+                  <div class="img__transition">
+                    <div class="img-clip">
+                      <img
+                        src="./img/companyRetreat-350x192.jpg"alt=""/>
+                    </div>
+                  </div>
+                  <div
+                    class="event-description p-[30px] mb-3 flex flex-col items-center">
+                    <h2 class="text-xl font-bold mb-3">Company Retreat 2023</h2>
+                    <p class="text-center mb-7">
+                      Our company retreat at the Rizal Recreational Center in Rizal, Laguna, held from October 20…
+                    </p>
+                    <a class="btn bg--fbs">Read More</a>
+                </div>
+                </div>
+                <div class="event-card mb-10">
+                  <div class="img__transition">
+                    <div class="img-clip">
+                      <img
+                        src="./img/HTML-Crash-Course-wide-350x192.jpg"alt=""/>
+                    </div>
+                  </div>
+                  <div
+                    class="event-description p-[30px] mb-3 flex flex-col items-center text-center">
+                    <h2 class="text-xl font-bold mb-3">HTML & CSS3 ONLINE CRASH COURSE FOR BEGINNERS</h2>
+                    <p class="text-center mb-7">
+                      Are you eager to start your web development journey from scratch? Join us for our…
+                    </p>
+                    <a class="btn bg--fbs">Read More</a>
+                </div>
+                </div>
+              </div>
+              <div class="flex justify-center"><a class="btn bg--meow">VIEW ALLL</a></div>
+              
+            </div>
+          </section>
         
         <footer class="footer">
             <div class="container">
@@ -300,7 +615,7 @@
                     </ul>
                     </div>
 
-                    <div class="footer__services text-white">
+                    <div class="footer__services text-white ">
                         <h3 class="font-bold">SERVICES WE OFFER</h3>
                         <ul class="text-sm text-center font-light mt-4">
                             <li>Web Solutions</li>
@@ -342,8 +657,22 @@
                 </div>
             </div>
         </footer>
+        <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+        <div class="elfsight-app-70c87f4d-f398-4c92-a57c-0ef958276684" data-elfsight-app-lazy></div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
         <script src="./js/script.js"></script>
-    </body>
+    
+        <script>
+          var slider = tns({
+            container: ".testimonial__sliders",
+            items: 1,
+            slideBy: "page",
+            autoplay: false,
+            controls: false,
+            autoplayButtonOutput: false,
+          });
+        </script>
+      </body>
     </html>
 
     

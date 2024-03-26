@@ -12,39 +12,70 @@
 </head>
 <body>
 
-    <!-- BANNER HEADER -->
-    <div class="container bg-white">
-        <header class="header">
-            <div class="header__wrapper">
-                <a href="#"><img src="/dist/img/logo-fbs.png" alt=""/></a>
-                <div class="header__action">
-                    <div class="header__nav">
-                    <ul>
-                            <li><a href="">HOME</a></li>
-                            <li><a href="">ABOUT</a></li>
-                            <li><a href="">SERVICES</a></li>
-                            <li><a href="">CAREER</a></li>
-                            <li><a href="">ACTIVITIES</a></li>
-                            <li><a href="">CONTACT</a></li>
-                            <li><a href="">PAYMENT</a></li>
-                            
+    <header>
+        <div class="container">
+          <div class="header__wrapper">
+            <div class="logo">
+              <a href="#"><img src="./img/logo-fbs.png" alt="" /></a>
+            </div>
+            <nav>
+  
+                <ul class="nav-links">
+                  <li>
+                    <a href="home.html">Home</a>
+                  </li>
+                  <li>
+                    <a href="about.html">About</a>
+                  </li>
+                  <li class="dropdown-parent">
+                    <a href="#dropdown">Services</a>
+                    <ul class="nav-links-dropdown lg:p-2">
+                      <li class="p-2 lg:px-1">
+                        <a href="#" class="text-light text-sm">Web Solutions</a>
+                      </li>
+                      <li class="p-2 lg:px-1">
+                        <a href="#" class="text-light text-sm"
+                          >Virtual Assistant Solutions</a
+                        >
+                      </li>
+                      <li class="p-2 lg:px-1">
+                        <a href="#" class="text-light text-sm"
+                          >Accounting Solutions</a
+                        >
+                      </li>
+                      <li class="p-2 lg:px-1">
+                        <a href="#" class="text-light text-sm"
+                          >Learning Center Solutions</a
+                        >
+                      </li>
                     </ul>
-                    </div>
-
-                    <div class="header__logo">
-                        <a href="#"><img src="/dist/img/logo.png" alt=""/></a>
-                    </div>
-                </div>
-            
-            <div class="burgir__menu">
-                <span></span>
-                <span></span>
-                <span></span>
+                  </li>
+                  <li>
+                    <a href="#">Career</a>
+                  </li>
+                  <li>
+                    <a href="#">Activities</a>
+                  </li>
+                  <li>
+                    <a href="#">Contact</a>
+                  </li>
+                  <li>
+                    <a href="#">Payment</a>
+                  </li>
+                </ul>
+  
+            </nav>
+            <div
+              class="burger__menu relative w-[40px] h-[40px] lg:hidden cursor-pointer duration-500"
+            >
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
             </div>
-            </div>
-            
-        </header>
-    </div>
+          </div>
+        </div>
+      </header>
 
 <!-- BANNER -->
     <div class="aboutbanner">
@@ -65,6 +96,8 @@
       </div>
       </div>
     </div>
+
+
 <!-- MISSION VISION -->
 <section class="mission">
     <div class="container">
@@ -110,10 +143,100 @@
     </div>
 </section>
 
+<!-- TEAMS -->
+<section class="teams bg-[#f5f5f5] pt-12">
+    <div class="container">
+        <!-- <div class="teams__wrapper m-8"> -->
+            <div class="teams__title">
+                <h1 class="text-center text-3xl mb-5">
+                   Meet <strong>Our Team</strong>
+                  </h1>
+                  <p class="text-center text-lg">We <strong>listen</strong>, we <strong>discuss</strong> and <strong>develop</strong>.</p>
+                  <p class="text-center font-normal text-lg">We work together with these enthusiastic individuals for extraordinary results.</p>
+            </div>
+            <div class="team__inmobile flex flex-col justify-center">
+                <img src="./img/fbs-team-2022-1.png" alt="" class="lg:hidden">
+            </div>
+            <div class="team__group hidden lg:block">
+                <div class="team__jj">
+                    <div class="team__position">
+                        <p>Jhonny Dichoso</p>
+                        <small>Supervisor, IT & LCS</small>
+                    </div>
+                    <div>
+                        <img src="./img/team-jj.png" alt="">
+                    </div>
+                </div>
+
+                <div class="team__jeff">
+                    <div class="team__position">
+                        <p>Jeffrey Pessina</p>
+                        <small>CEO</small>
+                    </div>
+                    <div>
+                        <img src="./img/team-jeff.png" alt="">
+                    </div>
+                </div>
+
+                <div class="team__ada">
+                    <div class="team__position">
+                        <p>Rhoda Beloso</p>
+                        <small>HR Manager</small>
+                    </div>
+                    <div>
+                        <img src="./img/team-ada.png" alt="">
+                    </div>
+                </div>
+
+                <div class="team__bea">
+                    <div class="team__position">
+                        <p>Bhea Del Monte</p>
+                        <small>Finance Head</small>
+                    </div>
+                    <div>
+                        <img src="./img/team-bea.png" alt="">
+                    </div>
+                </div>
+
+                <div class="team__patrick">
+                    <div class="team__position">
+                        <p>Patrick Reyes</p>
+                        <small>Supervisor, IT</small>
+                    </div>
+                    <div>
+                        <img src="./img/team-patrick.png" alt="">
+                    </div>
+                </div>
+
+                <div class="team__ralph">
+                    <div class="team__position">
+                        <p>Ralph Acoba</p>
+                        <small>Operations Manager</small>
+                    </div>
+                    <div>
+                        <img src="./img/team-ralph.png" alt="">
+                    </div>
+                </div>
+
+                <div class="team__michael">
+                    <div class="team__position">
+                        <p>Michael De Juses</p>
+                        <small>Supervisor, VA</small>
+                    </div>
+                    <div>
+                        <img src="./img/michael.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- </div> -->
+</section>
+
+<!-- PARTNERS -->
 <section class="partners">
     <div class="container">
         <div class="partners__wrapper">
-            <h2 class="banner-title text-center">Some of our <span class="font-bold">Clients and Partners</span></h2>
+            <h2 class="banner-title text-center text-4xl mb-8">Some of our <span class="font-bold">Clients and Partners</span></h2>
             <div class="partners__image">
                 
                     <ul><li><img src="./img/logo-tazamia.png" alt=""></li></ul>
@@ -135,12 +258,13 @@
                     <ul><li><img src="./img/logo-balaiin.png" alt=""></li></ul>
                     <ul><li><img src="./img/logo-jardin.png" alt=""></li></ul>
                     <ul><li><img src="./img/logo-majathai.png" alt=""></li></ul>
-                    <ul><li><img src="./img/rebekahnicole.png" alt=""></li></ul>
-                
+                    <ul><li><img src="./img/rebekahnicole.png" alt=""></li></ul>               
             </div>
         </div>
     </div>
 </section>
+
+
 <!-- CTA -->
 <div class="cta">
     <div class="container">
@@ -155,7 +279,7 @@
 <footer class="footer">
     <div class="container">
         <div class="footer__wrapper">
-            <div class="footer__socials">
+            <div class="footer__info">
                 <img src="./img/logo-fbs-wht.png" alt="">
             <div class="text-center">
                 <small class="text-white ">Copyright © 2024</small>
@@ -170,7 +294,7 @@
             </ul>
             </div>
 
-            <div class="footer__services text-white">
+            <div class="footer__info text-white">
                 <h3 class="font-bold">SERVICES WE OFFER</h3>
                 <ul class="text-sm text-center font-light mt-4">
                     <li>Web Solutions</li>
@@ -180,7 +304,7 @@
                 </ul>
             </div>
 
-            <div class="footer__contacts text-white">
+            <div class="footer__info text-white">
                 <h3 class="font-bold text-center lg:text-start">CONTACT DETAILS</h3>
                 <div class="contact text-sm font-light mt-4">
                 <ul class="lg:flex lg:gap-3 lg:justify-start flex gap-3 justify-center">
@@ -213,5 +337,7 @@
     </div>
 </footer>
 <script src="./js/script.js"></script>
+<script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+<div class="elfsight-app-70c87f4d-f398-4c92-a57c-0ef958276684" data-elfsight-app-lazy></div>
 </body>
 </html>

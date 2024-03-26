@@ -16,6 +16,7 @@ module.exports = {
         redz: "#e64737",
         lightredz: "#ff4041",
         fbscolor: "#6a103f",
+        primary: "#6a103f",
       }
     },
   },

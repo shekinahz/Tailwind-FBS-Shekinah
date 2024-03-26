@@ -12,7 +12,7 @@
 @layer components {
 
     .header__wrapper {
-        @apply py-0 lg:px-[8rem] flex items-center bg-center justify-between lg:py-1
+        @apply py-0 lg:px-[5rem] flex items-center bg-center justify-between 
       }
       nav {
         @apply absolute w-full h-full bg-light top-[75px] left-[-100%] z-10 border-t-[1px] border-gray-200 transition-all duration-[0.5s] lg:static lg:border-none;
@@ -220,6 +220,12 @@
     }
     .footer .footer__wrapper {
         @apply flex flex-col items-center gap-5 md:flex md:flex-row md:place-content-around
+    }
+    .footer__content{
+        @apply lg:border-r-[1px] border-light lg:px-[6rem] lg:py-0
+    }
+    .footer__content:last-child{
+        @apply border-none
     }
 
      /*ABOUTBANNER*/

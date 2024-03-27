@@ -10,6 +10,8 @@ module.exports = {
        FBSBanner: "url(/dist/img/fbs-banner-bg.png)",
         offerbg: "url(/dist/img/whatoffer.jpg)",
         bgsvg: "url(/dist/img/bg3.svg)",
+        quoteleft: "url(/dist/img/quote-left.svg",
+        quoteright: "url(/dist/img/quote-right.svg",
       },
       colors:{
         dark:"#2b2b2b",

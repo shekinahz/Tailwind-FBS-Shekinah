@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
 <!-- HEADER -->
@@ -173,7 +174,9 @@
                 <div class="testimonial__sliders">
                   <div class="slider__content">
                     <div class="slider-grid">
-                    <div class="slider__image">
+                    <div class="slider__image" data-aos="fade-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
                       <img
                         src="./img/jamesDavidson-e1685672789528.jpg"alt=""/>
                       <h2 class="text-center font-bold text-gray-800">
@@ -188,7 +191,8 @@
                       </h4>
                     </div>
                     
-                    <div class="slider__info">
+                    <div class="slider__info" data-aos="fade-left" data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
                       <h2
                         class="text-center max-w-[80%] font-bold text-[14px] leading-8 heading-1 mx-auto pb-16 lg:pt-16">
                         “Frontline Business Solutions” is beyond an exceptional firm.
@@ -459,7 +463,10 @@
     </div>
   </div>
 </footer>
-        
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>        
 <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
 <div class="elfsight-app-70c87f4d-f398-4c92-a57c-0ef958276684" data-elfsight-app-lazy></div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>

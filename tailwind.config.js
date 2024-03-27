@@ -2,8 +2,9 @@ module.exports = {
   content: ["./dist/**/*.{html,js}"],
   theme: {
     fontFamily: {
-      'montserrat': ['Montserrat', 'sans-serif'],
+      asdfghjkl: ['Montserrat', 'sans-serif'],
     },
+    
     extend: {
       backgroundImage: {
        FBSBanner: "url(/dist/img/fbs-banner-bg.png)",

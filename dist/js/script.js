@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const dropdownToggle = document.querySelector(".dropdown-parent");
-  const dropdownMenu = document.querySelector(".nav-links-dropdown");
+  const dropdownToggle = document.querySelector(".dropdown__contents");
+  const dropdownMenu = document.querySelector(".nav__links__dropdown");
 
   dropdownToggle.addEventListener("mouseenter", function () {
     dropdownToggle.classList.add("active");
@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-const burgerbtn = document.querySelector(".burger__menu");
+const burgerbtn = document.querySelector(".burgir__menu");
 const headerA = document.querySelector("nav");
 burgerbtn.addEventListener("click", () => {
   burgerbtn.classList.toggle("open");
